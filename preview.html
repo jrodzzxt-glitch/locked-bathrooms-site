@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Locked Bathrooms in Schools</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background-color:#f4f4f4;
+      color:#222;
+      line-height:1.6;
+    }
+
+    header{
+      background:#1f3c88;
+      color:white;
+      padding:40px 20px;
+      text-align:center;
+    }
+
+    header h1{
+      font-size:3rem;
+      margin-bottom:10px;
+    }
+
+    nav{
+      background:#12265a;
+      padding:15px;
+      text-align:center;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin:0 15px;
+      font-weight:bold;
+    }
+
+    nav a:hover{
+      text-decoration:underline;
+    }
+
+    .hero{
+      background:url('https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1400&auto=format&fit=crop') center/cover;
+      height:400px;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      color:white;
+      text-align:center;
+    }
+
+    .hero h2{
+      background:rgba(0,0,0,0.6);
+      padding:20px;
+      border-radius:10px;
+      font-size:2rem;
+    }
+
+    .container{
+      width:90%;
+      max-width:1100px;
+      margin:auto;
+      padding:40px 0;
+    }
+
+    .section{
+      margin-bottom:50px;
+      background:white;
+      padding:30px;
+      border-radius:10px;
+      box-shadow:0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .section h2{
+      color:#1f3c88;
+      margin-bottom:15px;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+      margin-top:20px;
+    }
+
+    .card{
+      background:#eef2ff;
+      padding:20px;
+      border-radius:10px;
+      border-left:5px solid #1f3c88;
+    }
+
+    footer{
+      background:#12265a;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:40px;
+    }
+
+    button{
+      background:#1f3c88;
+      color:white;
+      border:none;
+      padding:12px 20px;
+      border-radius:5px;
+      cursor:pointer;
+      margin-top:15px;
+    }
+
+    button:hover{
+      background:#2d4fb3;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Locked Bathrooms in Schools</h1>
+    <p>Understanding the impact on students and school environments</p>
+  </header>
+
+  <nav>
+    <a href="#problem">The Problem</a>
+    <a href="#effects">Effects</a>
+    <a href="#solutions">Solutions</a>
+  </nav>
+
+  <section class="hero">
+    <h2>Should school bathrooms stay locked?</h2>
+  </section>
+
+  <div class="container">
+
+    <section class="section" id="problem">
+      <h2>The Problem</h2>
+      <p>
+        Many schools across the country have started locking bathrooms during class time
+        because of vandalism, vaping, and students skipping class. While schools want to
+        protect property and maintain safety, locked bathrooms can create major problems
+        for students who genuinely need access.
+      </p>
+    </section>
+
+    <section class="section" id="effects">
+      <h2>Effects on Students</h2>
+
+      <div class="cards">
+
+        <div class="card">
+          <h3>Health Concerns</h3>
+          <p>
+            Students may be forced to wait long periods before using the restroom,
+            which can cause discomfort and health issues.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Stress & Anxiety</h3>
+          <p>
+            Locked bathrooms can increase anxiety for students who already feel
+            uncomfortable asking teachers for permission.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Loss of Trust</h3>
+          <p>
+            Some students feel punished for the actions of a small group of people,
+            creating frustration toward school policies.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section" id="solutions">
+      <h2>Possible Solutions</h2>
+
+      <ul style="margin-left:20px; margin-top:10px;">
+        <li>Increase hallway supervision instead of locking bathrooms</li>
+        <li>Create scheduled restroom checks</li>
+        <li>Use student accountability systems</li>
+        <li>Improve school counseling and support programs</li>
+      </ul>
+
+      <button onclick="showMessage()">Share Your Opinion</button>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>Website created for awareness about locked school bathrooms</p>
+  </footer>
+
+  <script>
+    function showMessage() {
+      alert("Thank you for sharing your opinion on this important issue!");
+    }
+  </script>
+
+</body>
+</html>
